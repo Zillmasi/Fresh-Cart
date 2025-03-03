@@ -24,7 +24,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes,
-      // withHashLocation(),
+      withHashLocation(),
       withInMemoryScrolling({scrollPositionRestoration:'enabled'})
     ),
     provideClientHydration(withEventReplay()),
