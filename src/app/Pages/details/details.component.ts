@@ -59,6 +59,8 @@ this.subRouter=  this.activatedRoute.paramMap.subscribe({
             'Product added successfully to your cart',
             'Fresh Cart'
           );
+          this.cartService.cartCount.next(res.numOfCartItems)
+
         }
       },
       error: (err) => {
