@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { initFlowbite } from 'flowbite';
 import { NgxSpinnerComponent } from 'ngx-spinner';
 
 
@@ -11,4 +12,8 @@ import { NgxSpinnerComponent } from 'ngx-spinner';
 })
 export class AppComponent {
   title = 'FreshCart';
+
+  ngOnInit(): void {
+    initFlowbite();
+  }
 }
